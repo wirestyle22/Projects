@@ -1,0 +1,16 @@
+- hosts: all
+  become: yes
+  vars:
+    source_dir: "/path/to/directory"
+    backup_dir: "/path/to/backup/directory"
+  tasks:
+  - name: Ensure the backup directory exists
+    ansible.builtin.file:
+      path: "{{ backup_dir }}"
+      state: directory
+  - name: Synchronize source to backup
+    ansible.builtin.synchronize:
+      src: "{{ source_dir }}"
+      dest: "{{ backup_dir }}"
+      delete: yes
+      recursive: yes

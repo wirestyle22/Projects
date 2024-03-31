@@ -1,0 +1,14 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Install Lynis
+    ansible.builtin.package:
+      name: lynis
+      state: present
+  - name: Run Lynis audit
+    ansible.builtin.command: lynis audit system
+    register: lynis_output
+  - name: Fetch Lynis reports
+    ansible.builtin.fetch:
+      src: /var/log/lynis-report.dat
+      dest: /local/path/{{ inventory_hostname }}-lynis-report.dat
