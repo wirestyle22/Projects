@@ -1,0 +1,96 @@
+body {
+    background-image: url('talentbg.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 100vh; /* Ensure the body takes at least the viewport height */
+    font-family: 'Orbitron', sans-serif;
+    background-color: #333; /* Optional: sets the background color of the entire page */
+    color: #fff; /* Default text color */
+}
+
+#talentTreeContainer {
+    position: relative;
+    width: 100%; /* Adjust based on your layout */
+    max-width: 600px; /* Adjust based on your layout */
+    margin: auto;
+}
+
+#talentTree {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: #333; /* Darker grey background */
+}
+
+.talentRow {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.talent {
+    border: 1px solid #fff; /* White border for better visibility */
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #444; /* Slightly lighter grey for the talent blocks */
+    color: #fff; /* White text */
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+#talent1 {
+    left: 150px;
+}
+
+#talent3 {
+    left: 190px;
+}
+
+#talent8 {
+    left: 5px;
+}
+
+
+#talent9 {
+    left: 7px;
+}
+
+.locked {
+    background-color: #555; /* Even lighter grey for locked talents */
+    color: #777; /* Dimmed text for locked talents */
+    cursor: not-allowed;
+}
+
+.unlocked, .selected {
+    color: #fff; /* Ensure text remains white for clarity */
+}
+
+.selected {
+    background-color: #ffff00; /* Highlight color for selected talents */
+    color: #000; /* Text color for selected talents for contrast */
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #666; /* Tooltip background */
+    color: #fff; /* Tooltip text color */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 100;
+    white-space: pre-line; /* Preserves line breaks */
+}
+
+#linesContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allows click events to pass through to elements below */
+}

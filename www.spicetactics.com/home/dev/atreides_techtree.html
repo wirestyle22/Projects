@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="talentTree">
+        <div class="talentRow">
+            <div class="talent" id="talent1" data-tooltip="+5 Plascrete Production|Unlocks Maintenance Center Village Building|Unlocks Investment Office Village Building." onclick="selectTalent('talent1')">Local Community</div>
+        </div>
+        <div class="talentRow">
+            <div class="talent locked" id="talent2" data-tooltip="+1 Maximum crew in Harvesters|Unlocks the Spice Silos Village Building|Unlocks the Harvester Works Village Building" onclick="selectTalent('talent2')">Modular Parts</div>
+            <div class="talent locked" id="talent3" data-tooltip="Allows Construction of Multiple Village Buildings simultaneously|Unlocks the Mason Guild Building in Arakeen|Unlocks the Trade Agreement Treaty" onclick="selectTalent('talent3')">Urban Planning</div>
+        </div>
+        <div class="talentRow">
+            <div class="talent locked" id="talent4" data-tooltip="See next period's Spice Exchange Rate in the Spice Report|Unlocks the CHOAM Branch building in Arakeen|+1 Agent Slot in CHOAM Information" onclick="selectTalent('talent4')">CHOAM Integration</div>
+            <div class="talent locked" id="talent5" data-tooltip="Controlled Villages in Regions with at most 2 Wind Strength gain:|-30% Buildings Solari Upkeep|Buildings require -1 Water" onclick="selectTalent('talent5')">Insulated Valley</div>
+            <div class="talent locked" id="talent6" data-tooltip="Fuel Cell Factories produce +10 Solari|Fuel Cell Factories produce +5 Water|+10% Resource Production in villages with Fuel Cell Factory" onclick="selectTalent('talent6')">Geothermal Condensers</div>
+            <div class="talent locked" id="talent7" data-tooltip="+10 Solari Production per controlled Special Region|+2% Total Solari production per controlled Special Region" onclick="selectTalent('talent7')">Riches of Arrakis</div>
+        </div>
+        <div class="talentRow">
+            <div class="talent locked" id="talent8" data-tooltip="+2 Maximum Crew in Harvesters|After successfully paying the Imperial Tax every Harvster with a full screw gains +15% gathering rate permanently (x3 max)" onclick="selectTalent('talent8')">Atreides Foremen</div>
+            <div class="talent locked" id="talent9" data-tooltip="-15% CHOAM Share buying price|+0.1 Spice exchange rate per 5% CHOAM Share" onclick="selectTalent('talent9')">CHOAM Support</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
