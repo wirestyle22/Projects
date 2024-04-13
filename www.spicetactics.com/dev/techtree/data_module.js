@@ -35,10 +35,31 @@ const technologies = [
     { id: '34', name: 'Valuable Trinkets', description:'+100% Resources Received from trading with an allied Sietch\nUnlocks the Crafts Workshop Village Building', type: 'technology', position: { x: 4100, y: 100 }, parentIds: ['31'] },
     { id: '35', name: 'Border Defense', description:'+1 Missile Battery Limit\n+30% Missile Battery Power\n+2 Militia Armor', type: 'technology', position: { x: 4100, y: 100 }, parentIds: ['32'] },
     { id: '36', name: 'Wonders of the Desert', description:'+30% Resource Production in Special Regions\nNo Penalty Authority Cost to Annex a Village in a Special Region', type: 'technology', position: { x: 4100, y: 100 }, parentIds: ['34'] },
-
-
-  
-  
+    { id: '37', name: 'Work Ethics', description:'+5 Plascrete Production\n+3 Manpower Production\nUnlocks the Maintenance Center Village Building', type: 'technology', position: { x: 1300, y: 100 } },
+    { id: '38', name: 'Advanced Engineering', description:'Each Village Produces +2% Resources per Building Constructed\nUnlocks the Mason Guild Building in Main Base', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['1'] },
+    { id: '39', name: 'Crew Training Program', description:'+2 Maximum Crew in Harvestors\n+20% Spice Production', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['4'] },
+    { id: '40', name: 'Martial Economy', description:'+1 Militia Slot\nUnlocks the Office of Order Village Building', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '41', name: 'Cruel Reputation', description:'Using an Operation on a Faction in Conflict grants 25% of its Solari Cost as Influence\nUnlock the Political Agreement Treaty', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['10'] },
+    { id: '42', name: 'Landsraad Whispers', description:'Agents Assigned on a Landraad Information Slot produce +2 Intel\nUnlocks the Landsraad Quarters Building in Carthag\n+1 Agent Slot in Landsraad Information', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '43', name: 'Enhanced Questionning', description:'Oppressed Villages grant +1 Intel Production\nUnlocks the Interrogation Center building in Carthag', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '44', name: 'Arrakis Butchers', description:'+10 Water\n+50% Damage against Militia and Rebel\nGains 5 Manpower Upon Killing Militia and Rebels', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '45', name: 'Assembly Lines', description:'-30 Combat Probe and Harpy Recruitment Costs\n-30% Combat Probe and Harpy Training Time', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '46', name: 'Adrenaline Addiction', description:'+10 Command Points\nEvery Time a Unit Dies, ally Military Units that are fighting nearby receive +1% Attack Speed (x50 max)\nUnlocks the Second Gear Slot in the Armory', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '47', name: 'Instill Fear', description:'-10% Authority Cost to Annex Pillaged Villages\n-50% Authority Cost to Annex a Village Owned by Harkonne in the past', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '48', name: 'Savage Cleansing', description:'Pillaging a Sietch gives 100 Authority and Immediately Reveals another Sietch\nA Successful Pillage Resupplies +25% of Max Supply of the Units in the Occupation Circle', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '49', name: 'Symbols of Authority', description:'Oppressed Special Regions grant +1 Authority Production\nUnlocks the Crafts Workshop Village Building', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '50', name: 'Tinkerer Teams', description:'+1 Maximum Crew in Harvesters\nUnlocks the Trafficking Station Village Building\nUnlocks the Harvestor Works Building in Sietch Tuek', type: 'technology', position: { x: 1300, y: 100 } },
+    { id: '51', name: 'Underworld Contacts', description:'+2 MAximum Crew in Harvesters\nUnderworld Headquarters produce 20% of their Villages Spice Production\nUnlocks Contraband Supply special events', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },   
+    { id: '52', name: 'Foot in the Door', description:'-20% Underworld Headquarters installation costs within territories of factions in Truce\n +1 Influence and +1 Intel Production per Faction hosting at least 1 Underworld Headquarters\n+100% Agent Recruitment Speed', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '53', name: 'Security Details', description:'Receive 4 Free Mercenaries after any Resolution choice marked by a Bounty Passes\n+1 Agent Slot in Counterintelligence', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '54', name: 'Underworld Bribes', description:'+15 Landsraad Standing upon paying the Guild Fees\nResolution Marked by a Bounty Receives 1 more vote from the Houses Minor per 4 Landsraad Standing\n+1 Agent Slot in Landsraad Information', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '55', name: 'Guerilla Tactics', description:'+15 Water\nAt night, Military Units gain:\nAttacks deal +20% Damage\n+20% speed outside of combat', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '56', name: 'Organized Looting', description:'+30% Resources from Pillaging Villages and Sietches\nUnlocks Scavenging Drone Unit', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '57', name: 'Industrial Scavenging', description:'Non-Mechanical Units is the same Region as at least 1 Scavenging Drone consume -30% Solari Upkeep\nUnlocks the Second Gear Slot in the Armory\nUnlocks the Fusion Plant Building in Sietch Tuek', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '58', name: 'Synchronized Heist', description:'+10 Command Points\nOn Completing a Siege, Units in the Occupation Circle gain +20% speed for 1 day\nWhen at least 2 Sieges are under way against the same Faction, Pillages progress 100% faster', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '59', name: 'Criminal Barons', description:'-15% Underworld Headquarters Installation Costs\n+0.5 Water per Underworld Headquarters', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '60', name: 'Underground Network', description:'Smuggler Villages Produce +5 Solari per Underworld Headquarters in Adjacent Regions\nUnlocks the Black Market Branch Building in Sietch Tuek', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
+    { id: '61', name: 'Illicit Methods', description:'Ignore the cost penalty to Annex Pillaged Villages\nUnlocks the Investment Office Village Building\n +1 Agent Slot on Arrakis Information', type: 'technology', position: { x: 1300, y: 100 }, parentIds: ['3'] },
   ];
 
   
